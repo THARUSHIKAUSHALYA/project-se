@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartFix - Customer Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+
+        <div class="logo">
+            SmartFix
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="customer-dashboard.html">Dashboard</a>
+            <a href="find-technician.html">Find Technician</a>
+            <a href="login.html">Logout</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Dashboard Header -->
+    <section class="dashboard">
+
+        <div class="dashboard-header">
+
+            <h1>Welcome to SmartFix 👋</h1>
+
+            <p>
+                Find trusted technicians and manage your home repair services.
+            </p>
+
+        </div>
+
+
+        <!-- Dashboard Cards -->
+        <div class="dashboard-cards">
+
+            <!-- Find Technician -->
+            <div class="dashboard-card">
+
+                <div class="dashboard-icon">
+                    🔧
+                </div>
+
+                <h2>Find a Technician</h2>
+
+                <p>
+                    Find verified technicians for your home repair problem.
+                </p>
+
+                <a href="find-technician.html" class="dashboard-button">
+                    Find Technician
+                </a>
+
+            </div>
+
+
+            <!-- My Bookings -->
+            <div class="dashboard-card">
+
+                <div class="dashboard-icon">
+                    📅
+                </div>
+
+                <h2>My Bookings</h2>
+
+                <p>
+                    View and manage your current service bookings.
+                </p>
+
+                <button
+                    class="dashboard-button"
+                    onclick="showMessage('My Bookings')">
+                    View Bookings
+                </button>
+
+            </div>
+
+
+            <!-- Service History -->
+            <div class="dashboard-card">
+
+                <div class="dashboard-icon">
+                    📋
+                </div>
+
+                <h2>Service History</h2>
+
+                <p>
+                    View your previous repair and service details.
+                </p>
+
+                <button
+                    class="dashboard-button"
+                    onclick="showMessage('Service History')">
+                    View History
+                </button>
+
+            </div>
+
+
+            <!-- Reviews -->
+            <div class="dashboard-card">
+
+                <div class="dashboard-icon">
+                    ⭐
+                </div>
+
+                <h2>My Reviews</h2>
+
+                <p>
+                    View and manage your technician reviews.
+                </p>
+
+                <button
+                    class="dashboard-button"
+                    onclick="showMessage('My Reviews')">
+                    View Reviews
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Emergency Service -->
+        <div class="emergency-box">
+
+            <h2>🚨 Need an Emergency Technician?</h2>
+
+            <p>
+                Get quick help for urgent home repair problems.
+            </p>
+
+            <button onclick="emergencyRequest()">
+                Request Emergency Service
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 SmartFix. All Rights Reserved.</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
