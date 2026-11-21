@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Technician Dashboard - SmartFix</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="technician-dashboard">
+
+    <h1>Technician Dashboard</h1>
+    <p>Welcome to SmartFix!</p>
+
+    <!-- Technician Profile -->
+    <div class="tech-profile">
+        <h2>My Profile</h2>
+        <p>Name: Technician Name</p>
+        <p>Service Category: Electrical</p>
+        <p>Service Area: Vavuniya</p>
+        <p>Verification Status: Pending</p>
+    </div>
+
+    <!-- Service Requests -->
+    <h2>Customer Service Requests</h2>
+
+    <div class="request-card">
+
+        <h3>Request 01</h3>
+
+        <p><strong>Customer:</strong> Customer Name</p>
+        <p><strong>Service:</strong> Electrical</p>
+        <p><strong>Problem:</strong> Electrical wiring problem</p>
+        <p><strong>Location:</strong> 8.7542, 80.4982</p>
+        <p><strong>Status:</strong> Pending</p>
+
+        <button class="accept-btn"
+            onclick="acceptRequest()">
+            Accept
+        </button>
+
+        <button class="reject-btn"
+            onclick="rejectRequest()">
+            Reject
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

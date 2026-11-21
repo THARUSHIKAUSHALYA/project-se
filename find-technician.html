@@ -1,0 +1,61 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Find a Technician-SmartFix</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body class="find-tech">
+	<h1> Find a Technician</h1>
+	<p>Select a Service Category</p>
+		<div class ="sercive-catergory">
+			<div class="Category" onclick="selectCategory(this)">
+				<div>⚡</div>
+				<h3>Electrical</h3>
+			</div>
+			<div class ="Category" onclick="selectCategory(this)">
+				<div>🚰</div>
+				<h3>Plumbing</h3>
+			</div>
+			<div class="Category" onclick="selectCategory(this)">
+				<div>❄️</div>
+				<h3>AC Repair</h3>
+			</div>
+			<div class="Category" onclick="selectCategory(this)">
+				<div>🔌</div>
+				<h3>Appliance Repair</h3>
+			</div>
+			<div class="Category" onclick="selectCategory(this)">
+				<div>🪚</div>
+				<h3>Carpentry</h3>
+			</div>
+			<div class="Category" onclick="selectCategory(this)">
+				<div>🎨</div>
+				<h3>painting</h3>
+			</div>
+			<div class="Category" onclick="selectCategory(this)">
+				<div>🧱</div>
+				<h3>Masonry</h3>
+			</div>
+			<div class="Category" onclick="selectCategory(this)">
+				<div>📹</div>
+				<h3>CCTV & Security</h3>
+			</div>
+		</div>
+		
+		<p>Describe the Problem</p>
+		<textarea id="problem" placeholder="Describe your problem"></textarea>
+		
+		<p>Select Location</p>
+		<div id="map"></div>
+		<input type="text" id="location" placeholder="Select location on map" readonly>
+		<button class="location" onclick="getLocation()">Use My Location</button>
+		
+		
+		<button class="find-btn" onclick="findtech()">Find Technician</button>
+
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+		<script src="script.js"></script>
+</body>
+</html>

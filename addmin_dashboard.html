@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard - SmartFix</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="admin-dashboard">
+
+    <h1>Admin Dashboard</h1>
+    <p>Welcome to SmartFix Admin Panel!</p>
+
+    <!-- Technician Management -->
+    <h2>Technician Verification</h2>
+
+    <div class="admin-card">
+
+        <h3>Technician 01</h3>
+
+        <p><strong>Name:</strong> Technician Name</p>
+        <p><strong>Email:</strong> technician@gmail.com</p>
+        <p><strong>Phone:</strong> 0771234567</p>
+        <p><strong>Service Category:</strong> Electrical</p>
+        <p><strong>Service Area:</strong> Vavuniya</p>
+        <p><strong>Status:</strong> Pending</p>
+
+        <button class="verify-btn"
+            onclick="verifyTechnician()">
+            Verify
+        </button>
+
+        <button class="reject-btn"
+            onclick="rejectTechnician()">
+            Reject
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
